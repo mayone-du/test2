@@ -1,0 +1,666 @@
+/* 全体 */
+
+body{
+  background-color: #d2d2d2;
+  margin: 0;
+  color: #656565;
+}
+
+.container{
+  max-width: 1200px;background-color: white;
+  margin: 0 auto;
+}
+
+
+h1,h2,h3{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ヘッダー */
+
+
+.title{
+  border-top: 5px solid blue;
+  position: relative;
+  height: 100px;
+}
+
+.h-t-img{
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+}
+
+
+/* ナビバー */
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.h-nav{
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+/* nav ul li a{
+  display: block;
+} */
+
+.h-ul{
+  letter-spacing: -.4em;
+}
+
+
+.h-list{
+  display: inline-block;
+  width: calc(100%/6);
+  letter-spacing: normal;
+  border-left: 1px solid #d2d2d2;
+  box-sizing: border-box;
+  position: relative;
+  height: 64px;
+  vertical-align: bottom;
+}
+
+
+.h-l-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.h-l-top{
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+}
+
+.h-l-bottom{
+  font-size: 10px;
+  color: #bbb;
+  text-align: center;
+}
+
+/* 今いるページ */
+.active{
+  background-color: #E6ECFA;
+}
+
+.active .h-l-box::before{
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 4px;
+  background: blue;
+}
+
+
+
+/* ホバー時 */
+
+.h-list:hover{
+  background-color: #E6ECFA;
+  transition: 0.5s;
+}
+
+.h-list:hover .h-l-top{
+  color: blue;
+  transition: 0.5s;
+}
+
+
+.h-list:hover .h-l-box::before{
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 4px;
+  background: blue;
+
+}
+
+
+
+/* ヘッダー画像 */
+
+.h-img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* メインとサイドバー */
+
+.content{
+  margin :30px;
+}
+
+
+/* メイン */
+
+main{
+  width: 70%;
+  float: left;
+}
+
+h1{
+  background-color: #103CDF;
+  border-radius: 5px;
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 10px 30px;
+  position: relative;
+}
+
+
+h1::before{
+  content: "";
+  width: 3px;
+  height: 18px;
+  background: #8A9DF1;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  margin-right: 10px;
+}
+
+/* インフォメーション */
+
+.main-info{
+  margin: 20px;
+  line-height: 2;
+  font-size: 16px;
+}
+
+
+.info-box{
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+.date{
+  float: left;
+  /* margin-right: 20px; */
+  color: #0E36CA;
+}
+
+
+.info{
+  margin-left: 120px;
+}
+
+
+.new{
+  font-size: 10px;
+  background-color: red;
+  border-radius: 2px;
+  color: white;
+  padding: 3px 5px;
+}
+
+
+
+
+.log{
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 60px;
+}
+
+.log a{
+  color: #666;
+}
+
+
+
+h2{
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+
+main p{
+  margin-right:20px;
+  margin-left:20px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+main p a{
+  color: #656565;
+}
+
+
+main p a:hover{
+  color: #103CDF;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.point{
+  color: #FF0102;
+}
+
+
+
+
+
+
+
+/* サイドバー */
+
+
+
+aside{
+  float: right;
+  width: 25%;
+}
+
+/* フレーム付き */
+
+
+.s-h3{
+  border-top: 3px solid blue;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 15px 5px;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #666;
+  background-color: #eee;
+}
+
+
+
+
+
+.s-framebox{
+  border: 1px solid #d2d2d2;
+  padding: 10px;
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+}
+
+
+.s-list{
+  list-style: none;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.s-list a{
+  text-decoration: none;
+  color: #666;
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.s-list a:hover{
+  background-color: white;
+  color: blue;
+  transition: 0.5s;
+}
+
+/* フレームなし */
+
+
+.s-no-framebox{
+  margin-bottom: 20px;
+}
+
+
+
+/* 製品情報 */
+
+
+
+
+.s-img{
+  width: 20%;
+  float: left;
+  margin-right: 5px;
+}
+
+.s-title{
+  font-size: 12px;
+  color: blue;
+}
+
+.s-text{
+  font-size: 12px;
+}
+
+
+
+/* 会社情報 */
+.company{
+  text-align: center;
+  color: #666666;
+  padding: 5px;
+}
+
+
+.address{
+  text-align: center;
+  font-size: 10px;
+  color: #666;
+  padding: 5px;
+}
+
+
+/* フッター */
+
+
+footer{
+  clear: both;
+  background-color: #0E36CA;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.f-text{
+  padding: 15px;
+}
+
+
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer a:hover{
+  color: #0F36CA;
+  transition: .5s;
+}
+
+
+
+
+
+/* 会社概要 */
+
+table{
+  margin: 20px 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th{
+  font-weight: normal;
+  border: 1px solid #ccc;
+  width: 20%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+td{
+  border: 1px solid #ccc;
+  width: 80%;
+  padding: 10px;
+}
+
+
+.marker{
+  color: #333;
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+/* サービス */
+
+.card{
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin-top: 40px;
+  box-shadow:0 5px 10px 5px #d8d8d8;
+  position: relative;
+}
+
+.c-a{
+  text-decoration: none;
+  color: #656565;
+}
+
+.c-title{
+  color: blue;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.c-text{
+  font-size: 15px;
+  margin: 10px 20px;
+}
+
+
+.c-img{
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 20px;
+}
+
+
+.card::after{
+  content: "→";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #7d7d7d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.card:hover::after{
+  background-color: black;
+}
+
+.card:hover .c-text{
+  color: blue;
+}
+
+
+
+/* 採用情報 */
+
+.table-h{
+  text-align: left;
+}
+
+
+
+/* リンク */
+
+
+
+
+
+/* お問い合わせ */
+
+form {
+  text-align: center;
+}
+
+
+td{
+  text-align: left;
+}
+
+.input{
+  width: 60%;
+}
+
+.textarea{
+  width: 90%;
+}
+
+
+
+
+
+
+
+/* ハンバーガーメニュー */
+
+
+.nav-invisible{
+  display: none;
+}
+
+
+.nav-contents{
+  background-color: gray;
+  opacity: .8;
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+}
+
+
+
+/* スマホ対応 */
+@media (max-width: 720px){
+
+  /* ヘッダー */
+
+  .h-t-img{
+    width: 200px;
+  }
+
+
+
+  .h-nav{
+    display: none;
+  }
+
+
+  /* ハンバーガーメニュー */
+
+
+
+
+
+  .sp-menu-list{
+    list-style: none;
+    border-bottom: 1px solid white;
+  }
+
+
+
+  .sp-menu-list a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    display: block;
+  }
+
+
+
+
+
+  .line{
+    width: 20px;
+    height: 3px;
+    margin: 3px;
+    background-color: black;
+  }
+
+  .line-box{
+    border: 1px solid black;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+  }
+
+
+  #nav-input:checked ~ .nav-contents{
+  display: block;
+  }
+
+
+
+
+
+
+  /* メイン */
+
+  main{
+    width: 100%;
+    float: none;
+  }
+
+  h1, h2{
+    font-size: 14px;
+  }
+
+
+  h1::before{
+    content: "";
+    width: 3px;
+    height: 14px;
+    background: #8A9DF1;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    margin-right: 10px;
+  }
+
+
+  .date, .info{
+    font-size: 12px;
+  }
+
+  .info{
+    margin-left: 100px;
+  }
+
+
+
+
+  main p{
+    font-size: 12px;
+  }
+
+  /* サイドバー */
+
+  aside{
+    float: none;
+    width: 100%;
+  }
+
+}
